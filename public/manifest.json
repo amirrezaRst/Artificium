@@ -1,0 +1,16 @@
+{
+  "short_name": "Artificium",
+  "name": "Artificium AI",
+  "description": "Artificium AI is a platform for creating and sharing AI-generated art.",
+  "icons": [
+    {
+      "src": "./images/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0d0f10",
+  "background_color": "#131619"
+}
