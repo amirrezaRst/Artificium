@@ -9,8 +9,8 @@ const Signup = () => {
                 <section
                     className="lg:col-span-2 container lg:py-10 py-3 lg:bg-transparent bg-[#131619] rounded-xl z-30 flex flex-col justify-between"
                 >
-
-                    <div className="flex items-center justify-between 2xl:bg-slate-400 xl:bg-stone-500 lg:bg-orange-500 md:bg-yellow-300 sm:bg-indigo-500 bg-teal-300">
+ {/* 2xl:bg-slate-400 xl:bg-stone-500 lg:bg-orange-500 md:bg-yellow-300 sm:bg-indigo-500 bg-teal-300 */}
+                    <div className="flex items-center justify-between">
                         <Link to={`/`}><img src="/./images/logo.png" alt="artificium" /></Link>
                         <Link to={`/login`} className="text-[#7dc6cb] cursor-pointer lg:text-xl sm:text-xl text-lg font-semibold">Log in</Link>
                     </div>
