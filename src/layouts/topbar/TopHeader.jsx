@@ -3,7 +3,10 @@ import WorkspaceUser from "./WorkspaceUser";
 
 const TopHeader = () => {
     return (
-        <div className="content pb-3 border-b flex items-center justify-between">
+        <div
+            className="content pb-3 border-b flex items-center justify-between border-t-2
+            3xl:border-cyan-500 2xl:border-slate-500 xl:border-stone-500 lg:border-red-400 md:border-orange-500 sm:border-violet-500 border-teal-400"
+        >
             <div>
                 <h3 className="text-xl">Orbital Oddysey</h3>
                 <p className="mt-2">Marketing Campaign for a new TV series Launch</p>

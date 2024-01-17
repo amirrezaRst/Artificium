@@ -156,28 +156,33 @@ export const LibrarySvg = ({ active }) => {
 
 export const Square = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 30 30" fill="none">
-            <g filter="url(#filter0_dd_644_295)">
-                <rect x="13.5" y="3.5" width="15" height="15" rx="3" stroke="#b6f09ccc" stroke-width="1.5" stroke-linecap="round" />
-            </g>
-            <defs>
-                <filter id="filter0_dd_644_295" x="-1" y="-1" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="4" operator="erode" in="SourceAlpha" result="effect1_dropShadow_644_295" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="3" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.713726 0 0 0 0 0.941176 0 0 0 0 0.611765 0 0 0 0.16 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_644_295" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect2_dropShadow_644_295" />
-                    <feOffset dy="10" />
-                    <feGaussianBlur stdDeviation="7.5" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.713726 0 0 0 0 0.941176 0 0 0 0 0.611765 0 0 0 0.16 0" />
-                    <feBlend mode="normal" in2="effect1_dropShadow_644_295" result="effect2_dropShadow_644_295" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_644_295" result="shape" />
-                </filter>
-            </defs>
+        // <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 30 30" fill="none">
+        //     <g filter="url(#filter0_dd_644_295)">
+        //         <rect x="13.5" y="3.5" width="15" height="15" rx="3" stroke="#b6f09ccc" stroke-width="1.5" stroke-linecap="round" />
+        //     </g>
+        //     <defs>
+        //         <filter id="filter0_dd_644_295" x="-1" y="-1" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        //             <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        //             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        //             <feMorphology radius="4" operator="erode" in="SourceAlpha" result="effect1_dropShadow_644_295" />
+        //             <feOffset dy="4" />
+        //             <feGaussianBlur stdDeviation="3" />
+        //             <feColorMatrix type="matrix" values="0 0 0 0 0.713726 0 0 0 0 0.941176 0 0 0 0 0.611765 0 0 0 0.16 0" />
+        //             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_644_295" />
+        //             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        //             <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect2_dropShadow_644_295" />
+        //             <feOffset dy="10" />
+        //             <feGaussianBlur stdDeviation="7.5" />
+        //             <feColorMatrix type="matrix" values="0 0 0 0 0.713726 0 0 0 0 0.941176 0 0 0 0 0.611765 0 0 0 0.16 0" />
+        //             <feBlend mode="normal" in2="effect1_dropShadow_644_295" result="effect2_dropShadow_644_295" />
+        //             <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_644_295" result="shape" />
+        //         </filter>
+        //     </defs>
+        // </svg>
+
+        <svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" space="preserve">
+            {/* <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata> */}
+            <g><g><g><path fill="#b6f09ccc" d="M187,10H69c-32.6,0-59,26.4-59,59v118.1c0,32.5,26.4,58.9,59,58.9h118.1c32.5,0,58.9-26.4,58.9-59V69C246,36.4,219.6,10,187,10z M231.3,187c0,24.5-19.8,44.3-44.3,44.3H69c-24.5,0-44.3-19.8-44.3-44.3V69c0-24.5,19.8-44.3,44.3-44.3H187c24.5,0,44.3,19.8,44.3,44.3L231.3,187L231.3,187z" /></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g></g>
         </svg>
     )
 }

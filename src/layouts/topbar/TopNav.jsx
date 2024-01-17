@@ -38,7 +38,7 @@ const TopNav = ({ page, changePage }) => {
                 </div>
                 <div className={`w-full h-[3px] ${false ? "bg-[#B6F09C]" : ""}`}></div>
             </div>
-            <TopItem page={page} changePage={handlePage} />
+            {/* <TopItem page={page} changePage={handlePage} /> */}
         </nav>
     );
 }

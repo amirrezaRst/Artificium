@@ -1,3 +1,24 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* تغییر رنگ پس‌زمینه اسکرول بار */
+::-webkit-scrollbar-track {
+  background-color: #131619;
+  border-radius: 40px;
+}
+
+/* تغییر رنگ پس‌زمینه قسمت پر شده اسکرول بار */
+::-webkit-scrollbar-thumb {
+  background-color: #22262b;
+  border-radius: 40px;
+}
+
+/* تغییر رنگ هایلایت اسکرول بار در هوور */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2b2f35;
+}
+
 /*! START Login Styles */
 main.register-page {
   background-color: #131619;
@@ -79,11 +100,14 @@ h3 {
 .main-layout .sidebar {
   background-color: #0d0f10;
   border-radius: 0.7rem;
-  min-width: 280px;
+  /*! Must Edited */
+  /* min-width: 280px; */
 }
 
 .main-layout .sidebar .content {
-  padding: 1.2rem 1.1rem;
+  /*! min lg */
+  /* padding: 1.2rem 1.1rem; */
+  padding: 0.7rem 0.7rem;
   border-bottom: 1px solid #181b1f;
 }
 .main-layout .sidebar .content:last-of-type {
@@ -120,6 +144,12 @@ h3 {
   border-color: #1a1d21;
 }
 
+/* @media screen and (max-width:1534px ) {
+  .main-layout .sidebar {
+    min-width: 280px;
+  }
+} */
+
 /*todo topbar */
 .topbar {
   width: 100%;
@@ -142,8 +172,12 @@ h3 {
   overflow: hidden;
   border: 3px solid #0d0f10;
 }
-
 /*? END Main Layout Styles */
 
 /*! START Home Page Styles */
+main.home {
+  width: 100%;
+  border-radius: 0.7rem;
+  background-color: #0d0f10;
+}
 /*? END Home Page Styles */
