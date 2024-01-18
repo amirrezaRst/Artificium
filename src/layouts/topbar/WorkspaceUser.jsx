@@ -28,10 +28,6 @@ const users = [
 const WorkspaceUser = () => {
     const [limit, setLimit] = useState(true);
 
-    useEffect(() => {
-        console.log(limit)
-    }, [limit])
-
     return (
         <div className="user-group -space-x-3 md:-space-x-5 lg:-space-x-3 relative">
             {users.map((item, i) => {

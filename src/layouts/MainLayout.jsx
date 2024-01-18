@@ -17,7 +17,7 @@ const MainLayout = ({ children }) => {
 
                 {/* //! Main Content */}
                 <main className="home">
-
+                    {/* {children} */}
                 </main>
             </div>
 
