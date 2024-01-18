@@ -105,9 +105,7 @@ h3 {
 }
 
 .main-layout .sidebar .content {
-  /*! min lg */
-  /* padding: 1.2rem 1.1rem; */
-  padding: 0.7rem 0.7rem;
+  padding: 1.2rem 1.1rem;
   border-bottom: 1px solid #181b1f;
 }
 .main-layout .sidebar .content:last-of-type {
@@ -144,11 +142,11 @@ h3 {
   border-color: #1a1d21;
 }
 
-/* @media screen and (max-width:1534px ) {
-  .main-layout .sidebar {
-    min-width: 280px;
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .main-layout .sidebar .content {
+    padding: 0.7rem 0.7rem;
   }
-} */
+}
 
 /*todo topbar */
 .topbar {

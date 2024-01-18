@@ -11,7 +11,7 @@ const generalNav = [
 const Sidebar = () => {
     return (
         <aside className="sidebar flex flex-col justify-between
-        3xl:min-w-[300px] 2xl:min-w-[280px] lg:min-w-[260px] min-w-0 lg:relative
+        3xl:min-w-[300px] 2xl:min-w-[260px] lg:min-w-[260px] md:min-w-0 min-w-[250px] lg:relative
         ">
 
             {/*!//! workspace section */}
