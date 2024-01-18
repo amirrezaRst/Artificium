@@ -4,7 +4,7 @@ import { useState } from "react"
 const SingleUser = ({ setLimit, id, number }) => {
     return (
         <div
-            className={`w-11 h-11 rounded-2xl bg-[#1A1D21] flex items-center justify-center ${!id && "cursor-pointer"}`}
+            className={`max-sm:w-9 max-sm:h-9 max-md:w-10 max-md:h-10 w-11 3h-11 rounded-2xl bg-[#1A1D21] flex items-center justify-center ${!id && "cursor-pointer"}`}
             onClick={() => !id ? setLimit(false) : null}
         >
             {
@@ -33,7 +33,7 @@ const WorkspaceUser = () => {
     }, [limit])
 
     return (
-        <div className="user-group -space-x-2 relative">
+        <div className="user-group -space-x-3 md:-space-x-5 lg:-space-x-3 relative">
             {users.map((item, i) => {
                 if (limit) {
                     if (i <= 2) {

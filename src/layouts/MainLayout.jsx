@@ -7,7 +7,7 @@ import Topbar from "./topbar";
 const MainLayout = ({ children }) => {
     return (
         <div
-            className="main-layout xl:p-6 2xl:px-[8%] lg:p-4 p-6 flex gap-4">
+            className="main-layout 2xl:px-[8%] xl:p-6 lg:p-4 sm:p-6 p-4 flex gap-4">
 
             {/* <Sidebar /> */}
 

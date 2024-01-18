@@ -1,32 +1,12 @@
 export const LogoSvg = ({ active }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg"
-            width="100%" height="100%" viewBox="0 0 37 37" fill="none"
-            style={{ filter: `drop-shadow(0px 4px 6px ${active ? "rgba(182, 240, 156, 0.6)" : "rgba(104, 107, 110, 0.6)"})` }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 37 37" fill="none"
+            style={{ filter: `drop-shadow(0px 4px 6px ${active ? "rgba(182, 240, 156, 0.6)" : "rgba(104, 107, 110, 0.6)"})`,textAlign:"center" }}
         >
-            <g filter="url(#filter0_dd_622_164)">
-                <path d="M23.8518 7.08959L28.3171 16.023C28.886 17.161 28.0587 18.5 26.7867 18.5H23.8518M23.8518 7.08959L22.5304 4.44613C21.8999 3.18462 20.1001 3.18462 19.4696 4.44613L13.6828 16.023C13.114 17.161 13.9413 18.5 15.2133 18.5H18.1482M23.8518 7.08959L21 9.9422M18.1482 18.5H23.8518M18.1482 18.5L15.2965 15.6474M23.8518 18.5L18.1482 12.7948M21 9.9422L28.272 17.2163M21 9.9422L18.1482 12.7948M13.728 17.2163L15.2965 15.6474M15.2965 15.6474L18.1482 12.7948"
-                    stroke={active ? "#B6F09C" : "#9b9c9e"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                />
-            </g>
-            <defs>
-                <filter id="filter0_dd_622_164" x="-1" y="-1" width="100%" height="100%" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="4" operator="erode" in="SourceAlpha" result="effect1_dropShadow_622_164" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="3" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.713726 0 0 0 0 0.941176 0 0 0 0 0.611765 0 0 0 0.16 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_622_164" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect2_dropShadow_622_164" />
-                    <feOffset dy="10" />
-                    <feGaussianBlur stdDeviation="7.5" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.713726 0 0 0 0 0.941176 0 0 0 0 0.611765 0 0 0 0.16 0" />
-                    <feBlend mode="normal" in2="effect1_dropShadow_622_164" result="effect2_dropShadow_622_164" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_622_164" result="shape" />
-                </filter>
-            </defs>
+            <path
+                d="M13.4221 5.30751L18.7806 16.0276C19.4632 17.3932 18.4704 19 16.9441 19H13.4221M13.4221 5.30751L11.8365 2.13535C11.0798 0.621548 8.92018 0.62155 8.1635 2.13535L1.21942 16.0276C0.536808 17.3932 1.52955 19 3.05592 19H6.57789M13.4221 5.30751L10 8.73064M6.57789 19H13.4221M6.57789 19L3.15577 15.5769M13.4221 19L6.57789 12.1538M10 8.73064L18.7264 17.4596M10 8.73064L6.57789 12.1538M1.27361 17.4596L3.15577 15.5769M3.15577 15.5769L6.57789 12.1538"
+                stroke={active ? "#B6F09C" : "#9b9c9e"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style={{width:"100%",height:"100%"}}
+            />
         </svg>
     )
 }
@@ -75,7 +55,10 @@ export const GearSvg = () => {
 export const ShareSvg = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" className="inline" viewBox="0 0 20 20" fill="none">
-            <path d="M12.0225 13.7136C11.7965 14.0894 11.6666 14.5295 11.6666 15C11.6666 16.3807 12.7859 17.5 14.1666 17.5C15.5473 17.5 16.6666 16.3807 16.6666 15C16.6666 13.6193 15.5473 12.5 14.1666 12.5C13.2564 12.5 12.4597 12.9865 12.0225 13.7136ZM12.0225 13.7136L7.97731 11.2864M7.97731 11.2864C8.20329 10.9106 8.33325 10.4705 8.33325 10C8.33325 9.52952 8.20329 9.0894 7.97731 8.71357M7.97731 11.2864C7.5401 12.0135 6.74348 12.5 5.83325 12.5C4.45254 12.5 3.33325 11.3807 3.33325 10C3.33325 8.61929 4.45254 7.5 5.83325 7.5C6.74348 7.5 7.5401 7.98645 7.97731 8.71357M7.97731 8.71357L12.0225 6.28643M12.0225 6.28643C12.4597 7.01355 13.2564 7.5 14.1666 7.5C15.5473 7.5 16.6666 6.38071 16.6666 5C16.6666 3.61929 15.5473 2.5 14.1666 2.5C12.7859 2.5 11.6666 3.61929 11.6666 5C11.6666 5.47048 11.7965 5.9106 12.0225 6.28643Z" stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M12.0225 13.7136C11.7965 14.0894 11.6666 14.5295 11.6666 15C11.6666 16.3807 12.7859 17.5 14.1666 17.5C15.5473 17.5 16.6666 16.3807 16.6666 15C16.6666 13.6193 15.5473 12.5 14.1666 12.5C13.2564 12.5 12.4597 12.9865 12.0225 13.7136ZM12.0225 13.7136L7.97731 11.2864M7.97731 11.2864C8.20329 10.9106 8.33325 10.4705 8.33325 10C8.33325 9.52952 8.20329 9.0894 7.97731 8.71357M7.97731 11.2864C7.5401 12.0135 6.74348 12.5 5.83325 12.5C4.45254 12.5 3.33325 11.3807 3.33325 10C3.33325 8.61929 4.45254 7.5 5.83325 7.5C6.74348 7.5 7.5401 7.98645 7.97731 8.71357M7.97731 8.71357L12.0225 6.28643M12.0225 6.28643C12.4597 7.01355 13.2564 7.5 14.1666 7.5C15.5473 7.5 16.6666 6.38071 16.6666 5C16.6666 3.61929 15.5473 2.5 14.1666 2.5C12.7859 2.5 11.6666 3.61929 11.6666 5C11.6666 5.47048 11.7965 5.9106 12.0225 6.28643Z"
+                stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
         </svg>
     )
 }
@@ -83,72 +66,36 @@ export const ShareSvg = () => {
 export const PenSvg = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 20 20" fill="none">
-            <path d="M16.6666 15.8333H10.4166M3.33325 13.2101V15.6667C3.33325 15.7587 3.40787 15.8333 3.49992 15.8333H5.95652C6.00073 15.8333 6.04312 15.8158 6.07438 15.7845L14.8821 6.97683C14.9472 6.91174 14.9472 6.80621 14.8821 6.74112L12.4255 4.28452C12.3604 4.21943 12.2548 4.21943 12.1898 4.28452L3.38207 13.0922C3.35081 13.1235 3.33325 13.1659 3.33325 13.2101Z" stroke="#CDCECF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M16.6666 15.8333H10.4166M3.33325 13.2101V15.6667C3.33325 15.7587 3.40787 15.8333 3.49992 15.8333H5.95652C6.00073 15.8333 6.04312 15.8158 6.07438 15.7845L14.8821 6.97683C14.9472 6.91174 14.9472 6.80621 14.8821 6.74112L12.4255 4.28452C12.3604 4.21943 12.2548 4.21943 12.1898 4.28452L3.38207 13.0922C3.35081 13.1235 3.33325 13.1659 3.33325 13.2101Z"
+                stroke="#79797a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
         </svg>
     )
 }
 
 export const ChatSvg = ({ active }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg"
-            width="100%" height="100%" viewBox="0 0 38 38" fill="none"
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 37 37" fill="none"
             style={{ filter: `drop-shadow(0px 4px 6px ${active ? "rgba(182, 240, 156, 0.6)" : "rgba(104, 107, 110, 0.6)"})` }}
         >
-            <g filter="url(#filter0_dd_622_169)">
-                <path d="M21 18.5C25.1421 18.5 28.5 15.1421 28.5 11C28.5 6.85786 25.1421 3.5 21 3.5C16.8579 3.5 13.5 6.85786 13.5 11V18.5H21Z"
-                    stroke={active ? "#B6F09C" : "#9b9c9e"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                />
-            </g>
-            <defs>
-                <filter id="filter0_dd_622_169" x="-1" y="-1" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="4" operator="erode" in="SourceAlpha" result="effect1_dropShadow_622_169" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="3" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.407843 0 0 0 0 0.419608 0 0 0 0 0.431373 0 0 0 0.16 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_622_169" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect2_dropShadow_622_169" />
-                    <feOffset dy="10" />
-                    <feGaussianBlur stdDeviation="7.5" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.407843 0 0 0 0 0.419608 0 0 0 0 0.431373 0 0 0 0.16 0" />
-                    <feBlend mode="normal" in2="effect1_dropShadow_622_169" result="effect2_dropShadow_622_169" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_622_169" result="shape" />
-                </filter>
-            </defs>
+            <path
+                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12V21H12Z"
+                stroke={active ? "#B6F09C" : "#9b9c9e"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
         </svg>
     )
 }
 
 export const LibrarySvg = ({ active }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none"
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 37 37" fill="none"
             style={{ filter: `drop-shadow(0px 4px 6px ${active ? "rgba(182, 240, 156, 0.6)" : "rgba(104, 107, 110, 0.6)"})` }}
         >
-            <g filter="url(#filter0_dd_622_172)">
-                <path d="M26.8333 7.25H21.6499C21.2547 7.25 20.8966 7.01727 20.7361 6.65614L20.0741 5.16667M26.8333 7.25V7.25C27.7538 7.25 28.5 7.99619 28.5 8.91667V16.5C28.5 17.6046 27.6046 18.5 26.5 18.5H15.5C14.3954 18.5 13.5 17.6046 13.5 16.5V5.5C13.5 4.39543 14.3954 3.5 15.5 3.5H18.6835C19.0786 3.5 19.4368 3.73273 19.5973 4.09386L20.0741 5.16667M26.8333 7.25V6.16667C26.8333 5.61438 26.3856 5.16667 25.8333 5.16667H20.0741"
-                    stroke={active ? "#B6F09C" : "#9b9c9e"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                />
-            </g>
-            <defs>
-                <filter id="filter0_dd_622_172" x="-1" y="-1" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="4" operator="erode" in="SourceAlpha" result="effect1_dropShadow_622_172" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="3" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.407843 0 0 0 0 0.419608 0 0 0 0 0.431373 0 0 0 0.16 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_622_172" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect2_dropShadow_622_172" />
-                    <feOffset dy="10" />
-                    <feGaussianBlur stdDeviation="7.5" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.407843 0 0 0 0 0.419608 0 0 0 0 0.431373 0 0 0 0.16 0" />
-                    <feBlend mode="normal" in2="effect1_dropShadow_622_172" result="effect2_dropShadow_622_172" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_622_172" result="shape" />
-                </filter>
-            </defs>
+            <path
+                d="M19 7.5H12.6499C12.2547 7.5 11.8966 7.26727 11.7361 6.90614L10.8889 5M19 7.5V7.5C20.1046 7.5 21 8.39543 21 9.5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9.35013C9.74532 3 10.1034 3.23273 10.2639 3.59386L10.8889 5M19 7.5V6C19 5.44772 18.5523 5 18 5H10.8889"
+                stroke={active ? "#B6F09C" : "#9b9c9e"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
         </svg>
     )
 }

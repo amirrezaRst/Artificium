@@ -170,6 +170,12 @@ h3 {
   overflow: hidden;
   border: 3px solid #0d0f10;
 }
+
+@media screen and (max-width: 639px) {
+  .topbar .content {
+    padding: 1.2rem .8rem;
+  }
+}
 /*? END Main Layout Styles */
 
 /*! START Home Page Styles */
