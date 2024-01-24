@@ -1,11 +1,11 @@
 export const LogoSvg = ({ active }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 37 37" fill="none"
-            style={{ filter: `drop-shadow(0px 4px 6px ${active ? "rgba(182, 240, 156, 0.6)" : "rgba(104, 107, 110, 0.6)"})`,textAlign:"center" }}
+            style={{ filter: `drop-shadow(0px 4px 6px ${active ? "rgba(182, 240, 156, 0.6)" : "rgba(104, 107, 110, 0.6)"})`, textAlign: "center" }}
         >
             <path
                 d="M13.4221 5.30751L18.7806 16.0276C19.4632 17.3932 18.4704 19 16.9441 19H13.4221M13.4221 5.30751L11.8365 2.13535C11.0798 0.621548 8.92018 0.62155 8.1635 2.13535L1.21942 16.0276C0.536808 17.3932 1.52955 19 3.05592 19H6.57789M13.4221 5.30751L10 8.73064M6.57789 19H13.4221M6.57789 19L3.15577 15.5769M13.4221 19L6.57789 12.1538M10 8.73064L18.7264 17.4596M10 8.73064L6.57789 12.1538M1.27361 17.4596L3.15577 15.5769M3.15577 15.5769L6.57789 12.1538"
-                stroke={active ? "#B6F09C" : "#9b9c9e"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style={{width:"100%",height:"100%"}}
+                stroke={active ? "#B6F09C" : "#9b9c9e"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style={{ width: "100%", height: "100%" }}
             />
         </svg>
     )
@@ -140,6 +140,96 @@ export const MenuSvg = () => {
         <svg width="100%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
             <path fill="#fff" fill-rule="evenodd"
                 d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+            />
+        </svg>
+    )
+}
+
+export const MicSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" fill="none">
+            <path
+                d="M1 8V9C1 12.3137 3.68629 15 7 15M13 8V9C13 12.3137 10.3137 15 7 15M7 15V19M7 19H11M7 19H3M7 12C5.34315 12 4 10.6569 4 9V4C4 2.34315 5.34315 1 7 1C8.65685 1 10 2.34315 10 4V9C10 10.6569 8.65685 12 7 12Z"
+                stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
+        </svg>
+    )
+}
+
+export const SendSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M9.73084 14.2692L19.2337 4.76642M5.48664 7.99807L17.1349 4.11532C18.8344 3.54883 20.4512 5.16564 19.8847 6.8651L16.0019 18.5134C15.3895 20.3507 12.8613 20.5304 11.9952 18.7981L10.0548 14.9174C9.84447 14.4967 9.50334 14.1555 9.08263 13.9452L5.20188 12.0048C3.46962 11.1387 3.64929 8.61052 5.48664 7.99807Z"
+                stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
+        </svg>
+    )
+}
+
+export const LinkSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M7.22183 14.7279L12.7019 9.24784C13.3853 8.56443 14.4934 8.56443 15.1768 9.24784V9.24784C15.8602 9.93126 15.8602 11.0393 15.1768 11.7227L9.6967 17.2028C8.32986 18.5696 6.11379 18.5696 4.74695 17.2028V17.2028V17.2028C3.38012 15.836 3.38012 13.6199 4.74695 12.253L11.2877 5.71231C13.3379 3.66206 16.6621 3.66206 18.7123 5.71231V5.71231C20.7626 7.76256 20.7626 11.0867 18.7123 13.1369L12.1716 19.6777"
+                stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
+        </svg>
+    )
+}
+
+export const HomeChatSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12V21H12Z"
+                stroke="#B6F09C" stroke-width="1.5" stroke-linecap="round"
+            />
+        </svg>
+    )
+}
+
+
+export const HomeDevelopSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M6.99985 8L3.70696 11.2929C3.31643 11.6834 3.31643 12.3166 3.70696 12.7071L6.99985 16M16.9998 8L20.2927 11.2929C20.6833 11.6834 20.6833 12.3166 20.2927 12.7071L16.9998 16M13.9998 6L9.99985 18"
+                stroke="#82DBF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
+        </svg>
+    )
+}
+
+
+export const HomePenSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M13 7L4.58579 15.4142C4.21071 15.7893 4 16.298 4 16.8284V18C4 19.1046 4.89543 20 6 20H7.17157C7.70201 20 8.21071 19.7893 8.58579 19.4142L17 11M13 7L14.5858 5.41421C15.3668 4.63317 16.6332 4.63317 17.4142 5.41421L18.5858 6.58579C19.3668 7.36684 19.3668 8.63317 18.5858 9.41421L17 11M13 7L17 11"
+                stroke="#BD9AF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
+        </svg>
+    )
+}
+
+export const HomeBulbSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M8.57143 16V17.5714C8.57143 19.465 10.1065 21 12 21V21C13.8935 21 15.4286 19.465 15.4286 17.5714V16M8.57143 16V15.3508C8.57143 14.7092 8.2476 14.1213 7.79785 13.6636C6.68829 12.5345 6 10.9617 6 9.22222C6 5.78578 8.68629 3 12 3C15.3137 3 18 5.78578 18 9.22222C18 10.9617 17.3117 12.5345 16.2022 13.6636C15.7524 14.1213 15.4286 14.7092 15.4286 15.3508V16M8.57143 16H15.4286"
+                stroke="#FFD147" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
+        </svg>
+    )
+}
+
+
+export const ArrowRightSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none">
+            <path d="M14 8L10 4M14 8L10 12M14 8L2 8"
+                stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
             />
         </svg>
     )

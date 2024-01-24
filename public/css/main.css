@@ -173,15 +173,41 @@ h3 {
 
 @media screen and (max-width: 639px) {
   .topbar .content {
-    padding: 1.2rem .8rem;
+    padding: 1.2rem 0.8rem;
   }
 }
 /*? END Main Layout Styles */
 
 /*! START Home Page Styles */
-main.home {
+main.main-content {
   width: 100%;
   border-radius: 0.7rem;
-  background-color: #0d0f10;
+  /* background-color: #0d0f10; */
+  border: 1px solid #0d0f10;
 }
+
+main.home .home-introduction {
+  text-align: center;
+}
+main.home .home-introduction .logo {
+  margin: 0 auto;
+  border: 1px solid #ffffff11;
+  background: linear-gradient(
+    118deg,
+    rgba(215, 237, 237, 0.16) -47.79%,
+    rgba(204, 235, 235, 0) 100%
+  );
+  box-shadow: 0px 0px 64px 0px rgba(182, 240, 156, 0.16);
+}
+
+main.home .home-introduction .group .item {
+  background: linear-gradient(
+    118deg,
+    rgba(215, 237, 237, 0.16) -47.79%,
+    rgba(204, 235, 235, 0) 100%
+  );
+  border: 1px solid #282b2f;
+  cursor: pointer;
+}
+
 /*? END Home Page Styles */
