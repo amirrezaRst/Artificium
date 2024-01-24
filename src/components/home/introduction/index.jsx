@@ -1,52 +1,94 @@
-import { ArrowRightSvg, HomeChatSvg } from "../../Svgs";
+import { ArrowRightSvg, HomeBulbSvg, HomeChatSvg, HomeDevelopSvg, HomePenSvg } from "../../Svgs";
 import Item from "./Item";
+import SingleSection from "./SingleSection";
+
+const IntroOption = [
+    {
+        title: "Create Assets",
+        icon: <HomeChatSvg />,
+        color: "green",
+        items: [
+            {
+                label: "UI wireframe",
+            },
+            {
+                label: "Brochure design",
+            },
+            {
+                label: "UI wireframe",
+            },
+            {
+                label: "Brochure design",
+            },
+        ]
+    },
+    {
+        title: "Developer Tools",
+        icon: <HomeDevelopSvg />,
+        color: "blue",
+        items: [
+            {
+                label: "API Integration",
+            },
+            {
+                label: "Test automation",
+            },
+            {
+                label: "DB optimization",
+            },
+            {
+                label: "Code review",
+            },
+        ]
+    },
+    {
+        title: "Content Creation",
+        icon: <HomePenSvg />,
+        color: "purple",
+        items: [
+            {
+                label: "Product description",
+            },
+            {
+                label: "E-mail copy",
+            },
+            {
+                label: "Whitepaper",
+            },
+            {
+                label: "Press release",
+            },
+        ]
+    },
+    {
+        title: "Idea Generation",
+        icon: <HomeBulbSvg />,
+        color: "orange",
+        items: [
+            {
+                label: "Hashtag ideas",
+            },
+            {
+                label: "Brainstorming",
+            },
+            {
+                label: "Trend analysis",
+            },
+            {
+                label: "Social media posts",
+            },
+        ]
+    },
+]
 
 const Introduction = () => {
     return (
-        <div className="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-5">
-
-            <div className="home-introduction">
-                <div
-                    className="logo w-12 h-12 p-3 rounded-full"
-                >
-                    <HomeChatSvg />
-                </div>
-                <h4 className="lg:text-xl text-[#ffffffe1] mt-2">Create Assets</h4>
-
-                <div className="group mt-5 flex flex-col gap-3">
-
-                    <div className="item w-full rounded-md py-3 px-4 flex items-center justify-between">
-                        <h4 className="text-white">UI wireframe</h4> <span><ArrowRightSvg /></span>
-                    </div>
-                    <div className="item w-full rounded-md py-3 px-4 flex items-center justify-between">
-                        <h4 className="text-white">Brochure design</h4> <span><ArrowRightSvg /></span>
-                    </div>
-
-                </div>
-            </div>
-            <div className="home-introduction">
-                <div
-                    className="logo w-12 h-12 p-3 rounded-full"
-                >
-                    <HomeChatSvg />
-                </div>
-                <h4 className="lg:text-xl text-[#ffffffe1] mt-2">Create Assets</h4>
-
-                <div className="group mt-5 flex flex-col gap-3">
-
-                    <Item />
-                    <Item />
-                    {/* <Item />
-                    <Item /> */}
-                    {/* <div className="item w-full rounded-md py-3 px-4 flex items-center justify-between">
-                        <h4 className="text-white">UI wireframe</h4> <span><ArrowRightSvg /></span>
-                    </div>
-                    <div className="item w-full rounded-md py-3 px-4 flex items-center justify-between">
-                        <h4 className="text-white">Brochure design</h4> <span><ArrowRightSvg /></span>
-                    </div> */}
-
-                </div>
-            </div>
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-12">
+            {
+                IntroOption.map((item, index) => (
+                    <SingleSection key={index} title={item.title} icon={item.icon} items={item.items} color={item.color} />
+                ))
+            }
 
         </div>
     );
