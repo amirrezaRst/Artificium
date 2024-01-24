@@ -180,9 +180,7 @@ h3 {
 
 /*! START Home Page Styles */
 main.main-content {
-  width: 100%;
   border-radius: 0.7rem;
-  /* background-color: #0d0f10; */
   border: 1px solid #0d0f10;
 }
 
