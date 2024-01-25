@@ -138,7 +138,7 @@ export const Square = () => {
 export const MenuSvg = () => {
     return (
         <svg width="100%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-            <path fill="#fff" fill-rule="evenodd"
+            <path fill="#fff" fillRule="evenodd"
                 d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
             />
         </svg>
@@ -260,6 +260,108 @@ export const EllipseSvg = () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
             <path d="M14.5 7.5C14.5 8.88071 13.3807 10 12 10C10.6193 10 9.5 8.88071 9.5 7.5C9.5 6.11929 10.6193 5 12 5C13.3807 5 14.5 6.11929 14.5 7.5Z" fill="#ffffff" />
             <path d="M14.5 16.5C14.5 17.8807 13.3807 19 12 19C10.6193 19 9.5 17.8807 9.5 16.5C9.5 15.1193 10.6193 14 12 14C13.3807 14 14.5 15.1193 14.5 16.5Z" fill="#ffffff" />
+        </svg>
+    )
+}
+
+export const MembersSvg = ({ active }) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M12 20C12 17.7909 10.2091 16 8 16H6C3.79086 16 2 17.7909 2 20M22 17C22 14.7909 20.2091 13 18 13H16C14.8053 13 13.7329 13.5238 13 14.3542M10 10C10 11.6569 8.65685 13 7 13C5.34315 13 4 11.6569 4 10C4 8.34315 5.34315 7 7 7C8.65685 7 10 8.34315 10 10ZM20 7C20 8.65685 18.6569 10 17 10C15.3431 10 14 8.65685 14 7C14 5.34315 15.3431 4 17 4C18.6569 4 20 5.34315 20 7Z"
+                stroke={active ? "#B6F09C" : "#686B6E"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            />
+        </svg>
+    )
+}
+
+export const MembersChatSvg = ({ active }) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M18 3H6C4.34315 3 3 4.34315 3 6V15.7574C3 16.553 3.31607 17.3161 3.87868 17.8787L6.71967 20.7197C7.19214 21.1921 8 20.8575 8 20.1893V19C8 17.8954 8.89543 17 10 17H18C19.6569 17 21 15.6569 21 14V6C21 4.34315 19.6569 3 18 3Z"
+                stroke={active ? "#B6F09C" : "#686B6E"} stroke-width="1.5" stroke-linecap="round"
+            />
+        </svg>
+    )
+}
+
+
+export const OnlineStatus = (props) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"
+            className="absolute top-0 right-0"
+            {...props}
+        >
+            <rect x="10" y="10" width="14" height="14" rx="7" stroke="#131619" stroke-width="4" />
+            <g filter="url(#filter0_d_335_4077)">
+                <circle cx="17" cy="17" r="5" fill="#4AC97E" />
+            </g>
+            <defs>
+                <filter id="filter0_d_335_4077" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="6" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.290196 0 0 0 0 0.788235 0 0 0 0 0.494118 0 0 0 0.48 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_335_4077" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_335_4077" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+    )
+};
+
+export const AwayStatus = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <rect x="10" y="10" width="14" height="14" rx="7" stroke="#131619" stroke-width="4" />
+            <g filter="url(#filter0_d_335_5110)">
+                <path d="M21.2345 19.6601C21.4603 19.3013 21.0877 18.8998 20.6675 18.9558C20.4491 18.985 20.2263 19 20 19C17.2386 19 15 16.7614 15 14C15 13.7737 15.015 13.5509 15.0442 13.3325C15.1002 12.9123 14.6987 12.5397 14.3399 12.7655C12.9341 13.6505 12 15.2162 12 17C12 19.7614 14.2386 22 17 22C18.7838 22 20.3495 21.0658 21.2345 19.6601Z" fill="#E26F20" />
+            </g>
+            <defs>
+                <filter id="filter0_d_335_5110" x="0" y="0.697266" width="33.3027" height="33.3027" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="6" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.886275 0 0 0 0 0.435294 0 0 0 0 0.12549 0 0 0 0.48 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_335_5110" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_335_5110" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+    )
+}
+
+export const DisturbStatus = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <rect x="10" y="10" width="14" height="14" rx="7" stroke="#131619" stroke-width="4" />
+            <g filter="url(#filter0_d_335_5166)">
+                <circle cx="17" cy="17" r="3.5" stroke="#D0302F" stroke-width="3" />
+            </g>
+            <defs>
+                <filter id="filter0_d_335_5166" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="6" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.815686 0 0 0 0 0.188235 0 0 0 0 0.184314 0 0 0 0.48 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_335_5166" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_335_5166" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+    )
+}
+
+export const OfflineStatus = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <circle cx="9" cy="9" r="7" fill="#363A3D" stroke="#131619" stroke-width="4" />
         </svg>
     )
 }

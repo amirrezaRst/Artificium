@@ -37,9 +37,9 @@ module.exports = {
         "custom": "0.7rem"
       },
       height: {
-        "custom-lg": "calc(100vh - 210px)",
-        "custom-sm": "calc(100vh - 260px)",
-        "custom-mobile": "calc(100vh - 170px)"
+        "custom-lg": "calc(100vh - 220px)",
+        "custom-sm": "calc(100vh - 270px)",
+        "custom-mobile": "calc(100vh - 180px)"
       }
     },
 
