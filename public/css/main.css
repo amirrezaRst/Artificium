@@ -218,7 +218,7 @@ h3 {
 
 @media screen and (max-width: 639px) {
   .topbar .content {
-    padding: 1.2rem 0.8rem;
+    padding: 0.8rem 0.8rem;
   }
 }
 /*? END Main Layout Styles */

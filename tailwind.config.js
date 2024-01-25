@@ -23,7 +23,8 @@ module.exports = {
         primary: "#131619",
         secondary: "#0D0F10",
         special: "#B6F09C",
-        "special-gray": "#9B9C9E"
+        "special-gray": "#9B9C9E",
+        "special-gray-2":"#1A1D21",
       },
       boxShadow: {
         "intro-green": "0px 0px 64px 0px rgba(182, 240, 156, 0.16)",
