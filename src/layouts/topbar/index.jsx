@@ -11,7 +11,7 @@ const Topbar = ({ setIsOpen }) => {
     const [page, setPage] = useState(location.pathname);
 
     return (
-        <div className="topbar">
+        <div className="topbar md:min-h-[160px] sm:min-h-[210px] min-h-[120px] flex flex-col justify-between">
 
             <TopHeader setIsOpen={setIsOpen} />
 

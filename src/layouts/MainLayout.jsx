@@ -16,18 +16,26 @@ const MainLayout = ({ children }) => {
 
             <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
 
-            <div className="w-full flex flex-col">
+            <div className="bg-indigo-500 h-full flex flex-col">
                 <Topbar setIsOpen={setIsOpen} />
-                <div className="flex flex-col flex-1 h-96 relative mt-2" >
+                <div className="flex flex-1 gap-4">
+                    <div className="flex flex-col flex-1 md:h-custom-lg sm:h-custom-sm h-custom-mobile relative mt-2"
+                        style={{ height: "calc(500px-100px)" }}
+                    >
 
-                    <div className="overflow-y-scroll h-full md:px-4 sm:px-2 px-0">
-                        <div className="w-full h-[10%] absolute top-0  bg-gradient-to-b from-primary to-primary-900/0"></div>
+                        <div className="overflow-y-scroll md:px-4 sm:px-2 px-0">
+                            <div className="w-full h-[10%] absolute top-0  bg-gradient-to-b from-primary to-primary-900/0"></div>
 
-                        {children}
+                            {children}
+                            {/* {children} */}
+
+                        </div>
+
+                        <Inbox />
+                    </div>
+                    <div className="h-full bg-cyan-400 w-[140px]">
 
                     </div>
-                    <Inbox />
-
                 </div>
             </div>
 

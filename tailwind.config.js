@@ -25,7 +25,7 @@ module.exports = {
         special: "#B6F09C",
         "special-gray": "#9B9C9E",
         "special-gray-2": "#1A1D21",
-        "special-gray-3":"#686B6E"
+        "special-gray-3": "#686B6E"
       },
       boxShadow: {
         "intro-green": "0px 0px 64px 0px rgba(182, 240, 156, 0.16)",
@@ -34,7 +34,12 @@ module.exports = {
         "intro-orange": "0px 0px 64px 0px rgba(255, 209, 71, 0.16)",
       },
       borderRadius: {
-        "custom":"0.7rem"
+        "custom": "0.7rem"
+      },
+      height: {
+        "custom-lg": "calc(100vh - 210px)",
+        "custom-sm": "calc(100vh - 260px)",
+        "custom-mobile": "calc(100vh - 170px)"
       }
     },
 

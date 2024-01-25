@@ -17,9 +17,8 @@ const Home = () => {
 
             <SingleChat user="Ryan Lee" time="4 sec ago" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, enim!" />
             <SingleChat user="Artificium" time="4 sec ago" text="Here are a few concept arts that also might inspire you. Take a look!" robot />
-            {/* <SingleChat user="Ryan Lee" time="4 sec ago" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, enim!" />
             <SingleChat user="Ryan Lee" time="4 sec ago" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, enim!" />
-            <SingleChat user="Ryan Lee" time="4 sec ago" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, enim!" /> */}
+            <SingleChat user="Artificium" time="4 sec ago" text="Here are a few concept arts that also might inspire you. Take a look!" robot />
 
 
         </main>
