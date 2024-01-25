@@ -83,7 +83,7 @@ const IntroOption = [
 
 const Introduction = () => {
     return (
-        <div className="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-12">
+        <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:gap-12 sm:gap-6 gap-4">
             {
                 IntroOption.map((item, index) => (
                     <SingleSection key={index} title={item.title} icon={item.icon} items={item.items} color={item.color} />
