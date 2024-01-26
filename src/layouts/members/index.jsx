@@ -3,7 +3,7 @@ import SwitchButton from "./SwitchButton";
 
 const Members = () => {
     return (
-        <div className="h-full flex flex-col gap-3 lg:block hidden">
+        <div className="h-full flex-col gap-3 lg:flex hidden">
             <div className="flex-1 relative overflow-y-scroll lg:min-w-[210px] py-3 pr-2">
 
                 <div className="flex justify-between items-baseline mb-5">

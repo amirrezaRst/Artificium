@@ -34,7 +34,9 @@ const MainLayout = ({ children }) => {
 
                         </div>
 
-                        <Inbox />
+                        {pathname != "/library" &&
+                            <Inbox />
+                        }
                     </div>
                     {pathname == "/chat" &&
                         <Members />
