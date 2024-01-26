@@ -1,9 +1,10 @@
+import { PlusSvg } from "../Svgs";
 import Card from "./Card";
 import CardHeader from "./CardHeader";
 
 const Library = () => {
     return (
-        <main className="py-8">
+        <main className="py-8 relative">
 
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 xl:gap-5 lg:gap-3 md:gap-4 sm:gap-4 gap-8 sm:divide-x divide-special-gray-2 ">
 
@@ -26,6 +27,10 @@ const Library = () => {
                 </section>
 
             </div>
+
+            <button className="w-11 h-11 rounded-2xl p-2 bg-secondary hover:bg-[#0a0b0b] hover:scale-110 transition-all flex items-center justify-center absolute right-0 bottom-3">
+                <PlusSvg />
+            </button>
 
         </main>
     );

@@ -20,9 +20,14 @@ const SingleChat = ({ robot, user, time, text }) => {
                     <p className="lg:text-base md:text-sm">{text}</p>
 
                 </div>
-                <button className="w-7 h-7">
-                    <CopySvg />
-                </button>
+                <div className="flex flex-col items-end gap-3">
+                    <button className="w-7 h-7">
+                        <CopySvg />
+                    </button>
+                    {!robot &&
+                        <button className="rounded-md px-3.5 py-1.5 text-sm bg-special-gray-2 text-slate-100/70 ">Reply</button>
+                    }
+                </div>
             </div>
             {!!robot &&
                 <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 sm:grid-cols-3 mt-6 mb-4 xl:gap-6 gap-3">

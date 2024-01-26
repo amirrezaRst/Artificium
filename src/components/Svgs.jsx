@@ -35,6 +35,28 @@ export const WalletSvg = () => {
     )
 }
 
+export const PlusSvg = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+            <g filter="url(#filter0_d_311_1038)">
+                <path d="M12 5V12M12 12V19M12 12H19M12 12H5" stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" />
+            </g>
+            <defs>
+                <filter id="filter0_d_311_1038" x="0.25" y="4.25" width="23.5" height="23.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_311_1038" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_311_1038" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+    )
+}
+
 export const CirclePlusSvg = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20" fill="none">

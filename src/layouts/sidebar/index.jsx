@@ -14,7 +14,10 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
     return (
         <div className={`sidebar-parent ${isOpen ? "active" : "active"}`}>
 
-            <div className={`sidebar-overlay ${isOpen ? "active" : ""}`}></div>
+            <div
+                className={`sidebar-overlay ${isOpen ? "active" : ""}`}
+                onClick={e => e.target === e.currentTarget && setIsOpen(!isOpen)}
+            />
 
             <aside className={`sidebar flex flex-col justify-between z-10 md:h-full max-md:h-[95%]
         3xl:min-w-[300px] 2xl:min-w-[260px] lg:min-w-[260px] md:min-w-0 min-w-[250px] lg:relative max-md:absolute max-md:w-[200px]
