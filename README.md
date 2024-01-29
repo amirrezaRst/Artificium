@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+![react project](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-baner.png?raw=true)
+# ![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/logo.png?raw=true) Artificium AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Hello, I am Amirreza Rostami, a full-stack developer. Currently, I am working on a front-end project for an artificial intelligence website and a smart assistant.
 
-## Available Scripts
+Artificium AI is a high-level artificial intelligence designed to assist individuals in various areas such as creative assets, developer tools, and content creation idea generation. Our goal is to provide the best experiences for users. This is the first version of the demo frontend for Artificium.
 
-In the project directory, you can run:
+## Shots
+![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-shot1.png?raw=true)
+![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-shot2.png?raw=true)
+![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-shot3.png?raw=true)
 
-### `npm start`
+## Technologies
+[![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-react-logo4.png?raw=true)](https://legacy.reactjs.org/)
+[![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-tailwind-logo4.png?raw=true)](https://tailwindcss.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Inastaling & Running
+``npm i`` 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+``npm start``
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Author
+Amirreza Rostami  
+amirreza.rostami.0073@gmail.com
