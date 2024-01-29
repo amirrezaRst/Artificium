@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import { useState } from "react"
 
 const SingleUser = ({ setLimit, id, number }) => {

@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { CirclePlusSvg, GearSvg, SearchSvg, WalletSvg } from "../../components/Svgs";
+import { CirclePlusSvg } from "../../components/Svgs";
 import SideItem from "./SideItem";
 import SideProfile from "./SideProfile";
 import SideWorkspace from "./SideWorkspace";

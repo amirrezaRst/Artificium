@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import SingleChat from "../../common/SingleChat";
 
 const Chat = () => {
     return (
         <main className="overflow-hidden py-8 flex flex-col gap-4">
+
+            <Helmet>
+                <title>Artificium - Chat</title>
+            </Helmet>
 
             {/*//! if you haven't messaged yet show introduction */}
             {/* <div>

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { PlusSvg } from "../Svgs";
 import Card from "./Card";
 import CardHeader from "./CardHeader";
@@ -5,6 +6,10 @@ import CardHeader from "./CardHeader";
 const Library = () => {
     return (
         <main className="py-8 relative">
+
+            <Helmet>
+                <title>Artificium - Library</title>
+            </Helmet>
 
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 xl:gap-5 lg:gap-3 md:gap-4 sm:gap-4 gap-8 sm:divide-x divide-special-gray-2 ">
 

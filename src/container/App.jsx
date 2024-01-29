@@ -7,11 +7,12 @@ import JoinWorkspace from "../components/register/JoinWorkspace";
 import MainLayout from "../layouts/MainLayout";
 import Chat from "../components/chat";
 import Library from "../components/library";
+import { HelmetProvider } from "react-helmet-async";
 
 const App = () => {
 
     return (
-        <>
+        <HelmetProvider>
             <Routes>
                 <Route exact path="/" element={<MainLayout><Home /></MainLayout>} />
                 <Route path="/login" element={<Login />} />
@@ -20,7 +21,7 @@ const App = () => {
                 <Route path="/chat" element={<MainLayout><Chat /></MainLayout>} />
                 <Route path="/library" element={<MainLayout><Library /></MainLayout>} />
             </Routes>
-        </>
+        </HelmetProvider>
     );
 }
 

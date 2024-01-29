@@ -17,17 +17,17 @@ const SwitchButton = () => {
                  border border-special/15 ${group === "members" ? "right-0" : "left-0"}`}
             ></div>
             <div
-                className={`flex items-center gap-2 w-2/4 px-2 py-3 text-sm font-medium ${group == "chats" ? "text-white/85" : "text-special-gray-3"} z-10 cursor-pointer`}
+                className={`flex items-center gap-2 w-2/4 px-2 py-3 text-sm font-medium ${group === "chats" ? "text-white/85" : "text-special-gray-3"} z-10 cursor-pointer`}
                 onClick={() => handleGroup("chats")}
             >
-                <div className="w-5 h-5"><MembersChatSvg active={group == "chats"} /></div>
+                <div className="w-5 h-5"><MembersChatSvg active={group === "chats"} /></div>
                 Chats
             </div>
             <div
-                className={`flex items-center gap-2 w-2/4 px-2 py-3 text-sm font-medium ${group == "members" ? "text-white/85" : "text-special-gray-3"} z-10 cursor-pointer`}
+                className={`flex items-center gap-2 w-2/4 px-2 py-3 text-sm font-medium ${group === "members" ? "text-white/85" : "text-special-gray-3"} z-10 cursor-pointer`}
                 onClick={() => handleGroup("members")}
             >
-                <div className="w-5 h-5"><MembersSvg active={group == "members"} /></div>
+                <div className="w-5 h-5"><MembersSvg active={group === "members"} /></div>
                 Members
             </div>
         </div>

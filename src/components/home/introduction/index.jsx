@@ -1,5 +1,4 @@
-import { ArrowRightSvg, HomeBulbSvg, HomeChatSvg, HomeDevelopSvg, HomePenSvg } from "../../Svgs";
-import Item from "./Item";
+import { HomeBulbSvg, HomeChatSvg, HomeDevelopSvg, HomePenSvg } from "../../Svgs";
 import SingleSection from "./SingleSection";
 
 const IntroOption = [

@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const JoinWorkspace = () => {
     return (
         <main className="register-page">
+
+            <Helmet>
+                <title>Artificium - Join Workspace</title>
+            </Helmet>
 
             <article className="grid lg:grid-cols-3 h-full relative lg:p-0 p-4">
 

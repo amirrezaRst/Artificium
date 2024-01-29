@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import SingleChat from "../../common/SingleChat";
 import MainLayout from "../../layouts/MainLayout";
 import { ArrowRightSvg, ChatSvg, CopySvg, HomeChatSvg, LinkSvg, MicSvg, SendSvg } from "../Svgs";
@@ -6,6 +7,10 @@ import Introduction from "./introduction";
 const Home = () => {
     return (
         <main className="home overflow-hidden py-8 flex flex-col gap-4">
+
+            <Helmet>
+                <title>Artificium - Home</title>
+            </Helmet>
 
             {/*//! if you haven't messaged yet show introduction */}
             {/* <div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Inbox from "../common/Inbox";
 import Sidebar from "./sidebar";
 import Topbar from "./topbar";
@@ -21,23 +21,22 @@ const MainLayout = ({ children }) => {
 
             <div className="h-full w-full flex flex-col">
                 <Topbar setIsOpen={setIsOpen} />
-                <div className="flex flex-1 gap-4 overflow-y-hidden">
+                <div className="flex flex-1 gap-4 overflow-y-hidden overflow-x-hidden">
                     <div className="flex flex-col flex-1 relative mt-2"
-                        // style={{ height: "calc(500px-100px)" }}
                     >
 
-                        <div className={`overflow-y-scroll md:px-3 sm:px-2 px-2 ${pathname == "/chat" ? "border-r" : ""} border-special-gray-2`}>
+                        <div className={`overflow-y-scroll md:px-3 sm:px-2 px-2 ${pathname === "/chat" ? "border-r" : ""} border-special-gray-2`}>
                             <div className="w-full h-[10%] absolute top-0  bg-gradient-to-b from-primary to-primary-900/0"></div>
 
                             {children}
 
                         </div>
 
-                        {pathname != "/library" &&
+                        {pathname !== "/library" &&
                             <Inbox />
                         }
                     </div>
-                    {pathname == "/chat" &&
+                    {pathname === "/chat" &&
                         <Members />
                     }
 

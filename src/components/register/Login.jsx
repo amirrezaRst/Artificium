@@ -1,9 +1,13 @@
-import { useLoaderData } from "react-router";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
         <main className="register-page">
+
+            <Helmet>
+                <title>Artificium - Login</title>
+            </Helmet>
 
             <article className="grid lg:grid-cols-2 h-full relative lg:p-0 p-4">
 
@@ -11,7 +15,6 @@ const Login = () => {
                     <Link to={`/`}>
                         <img src="/./images/logo.png" alt="artificium" />
                     </Link>
-                    {/* <div className="w-full h-[3px] 2xl:bg-slate-500 xl:bg-stone-500 lg:bg-orange-500 md:bg-amber-400 sm:bg-violet-600 bg-teal-500"></div> */}
 
                     <div className="xl:px-16 sm:px-10 px-6 sm:py-3 py-7">
                         <h3 className="text-3xl">Let's get <span>creative!</span></h3>

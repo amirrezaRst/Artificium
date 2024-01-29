@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router";
-import { ChatSvg, LibrarySvg, LogoSvg } from "../../components/Svgs";
 import TopItem from "./TopItem";
 
 
