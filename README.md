@@ -10,7 +10,7 @@ Artificium AI is a high-level artificial intelligence designed to assist individ
 ![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-shot2.png?raw=true)
 ![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-shot3.png?raw=true)
 
-## Technologies
+## Built With
 [![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-react-logo4.png?raw=true)](https://legacy.reactjs.org/)
 [![artificium](https://github.com/amirrezaRst/Artificium/blob/master/public/images/readme-tailwind-logo4.png?raw=true)](https://tailwindcss.com/)
 
